@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO Club Membership Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>UNESCO CLUB OF UNIVERSITY OF ABUJA</h2>
+        <h3>FEDERAL UNIVERSITY, ABUJA</h3>
+        <div class="form-header">
+            <img src="path_to_your_image.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="form-info">
+                <p><strong>Membership Form</strong></p>
+                <p>Serial Number: <strong>0036</strong></p>
+            </div>
+        </div>
+        <form id="membershipForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+            </div>
+            <div class="form-group">
+                <label for="marital-status">Marital Status:</label>
+                <input type="text" id="marital-status" name="marital-status" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="faculty">Faculty:</label>
+                <input type="text" id="faculty" name="faculty" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <input type="text" id="level" name="level" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="undertaking">Undertaking:</label>
+                <textarea id="undertaking" name="undertaking" rows="4" required>I hereby submit legitimately my consent to the declared purpose of this Organization. I solely agree to the set down rules and policies of this network...</textarea>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" required>
+            </div>
+            <button type="button" onclick="sendEmail()">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
