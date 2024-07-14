@@ -139,6 +139,29 @@ button:hover {
             <button type="button" onclick="sendEmail()">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function sendEmail() {
+    const form = document.getElementById('membershipForm');
+    const formData = new FormData(form);
+
+    const mailtoLink = `mailto:mondaykingsley80@gmail.com?subject=Membership%20Form%20Submission&body=${encodeURIComponent(
+        `Name: ${formData.get('name')}\n` +
+        `Nationality: ${formData.get('nationality')}\n` +
+        `Gender: ${formData.get('gender')}\n` +
+        `Marital Status: ${formData.get('marital-status')}\n` +
+        `Email: ${formData.get('email')}\n` +
+        `Mobile: ${formData.get('mobile')}\n` +
+        `Faculty: ${formData.get('faculty')}\n` +
+        `Department: ${formData.get('department')}\n` +
+        `Level: ${formData.get('level')}\n` +
+        `Date: ${formData.get('date')}\n` +
+        `Undertaking: ${formData.get('undertaking')}\n` +
+        `Signature: ${formData.get('signature')}`
+    )}`;
+
+    window.location.href = mailtoLink;
+}
+
+    </script>
 </body>
 </html>
